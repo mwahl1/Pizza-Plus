@@ -1,0 +1,36 @@
+Current State -
+
+Pizza delivery website called Pizza Plus. So far, I feel like it is very basic. All I have now is the main page. I don't have 
+any other pages. Now that im thinking about it, i want/need to make more. It's pretty dry as far as complexity. It's very straight forward,
+which can be a strength, but also a weakness because it is so barebones. weaknesses include how simple it is, no extra pages, and it just doesnt stand out.
+I want it to pop more, which it just doesnt right now. 
+
+Design & Content Cohesion -
+
+The design can be a bit tricky. I want it to stand out, but also i don't want it to be overwhelming to look at. Afterall, it is just a site to order pizza. 
+I'd still like to add some basic images of pizzas, and maybe some images too that can make it more personanable. I want to try and tell a story with the pizza,
+not just be a college pizza place
+
+Plan for Project 3 (Scope, Steps, and Criteria)
+
+Pages i want to add are - 
+1. full blown ordering page. I want it to be sleek but also easy to use. 
+2. full "About us" info page. Don't know if it will the landing page, but I want it to be the epicenter of WHY the pizzas are made.
+3. a Locations page would be nice. Never too far away, and just close enough it isnt a hassle to come and get.
+4. An orders/contact form page. The biggest thing in any industry is a customer service presnece. Need this one yesterday. 
+
+Beyond Project 3: What’s Needed to Feel “Finished”
+
+1. Definitely need to keep making updates to polish everything. Seems like it's own work is just to polish it.
+2. I haven't even thought about accessibility issues, but I do know I need to have them in the back of my mind. 
+
+P3 Roadmap - 
+
+-Add pages / page titles and alt texts
+-Add basic footer 
+-Make sure all links work
+-Create menu.html, locations.hmtl, and order.hmtl
+-Mobile support
+-make a simple 404.html with a link to home
+-improve readability
+-overall polish
