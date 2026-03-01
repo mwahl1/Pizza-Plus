@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Plus - Catering Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pizza Plus</h1>
+        <h2>Catering Services</h2>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="order.html">Order</a>
+        <a href="catering.html">Catering</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <section class="card hero">
+            <h2>Pizza for Every Occasion</h2>
+            <p>From office lunches to wedding receptions, we bring fresh, delicious pizza to your event. Let us handle the food while you enjoy your guests.</p>
+            <div class="order-actions">
+                <a class="btn btn-primary" href="#catering-form">Request a Quote</a>
+                <a class="btn btn-secondary" href="tel:555-123-4567">Call 555-123-4567</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Catering Packages</h3>
+            <p>All packages include plates, napkins, and serving utensils. Delivery and setup available for an additional fee.</p>
+
+            <div class="package">
+                <h4>Small Gathering (10-15 people)</h4>
+                <p>3 Large Pizzas &bull; 1 Order of Garlic Bread &bull; 2L Soda</p>
+                <p><strong>Starting at $65</strong></p>
+            </div>
+
+            <div class="package">
+                <h4>Medium Event (20-30 people)</h4>
+                <p>5 Large Pizzas &bull; 2 Orders of Wings &bull; Garlic Bread &bull; Garden Salad &bull; 2L Sodas</p>
+                <p><strong>Starting at $120</strong></p>
+            </div>
+
+            <div class="package">
+                <h4>Large Party (40+ people)</h4>
+                <p>8+ Large Pizzas &bull; 4 Orders of Wings &bull; Multiple Sides &bull; Salads &bull; Beverages</p>
+                <p><strong>Custom pricing available</strong></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Perfect For</h3>
+            <ul>
+                <li>Corporate meetings and office lunches</li>
+                <li>Birthday parties and celebrations</li>
+                <li>School events and fundraisers</li>
+                <li>Sports team gatherings</li>
+                <li>Wedding receptions and rehearsal dinners</li>
+                <li>Graduation parties</li>
+                <li>Community events</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>How It Works</h3>
+            <ol>
+                <li><strong>Contact Us:</strong> Call or fill out our form at least 48 hours in advance</li>
+                <li><strong>Plan Your Menu:</strong> We'll help you choose the right pizzas and sides</li>
+                <li><strong>Confirm Details:</strong> Finalize your order, delivery time, and special requests</li>
+                <li><strong>We Deliver:</strong> Your fresh, hot pizza arrives ready to serve</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h3>Add-Ons Available</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span class="item-name">Extra Wings (per 8 pc)</span>
+                    <span class="dots"></span>
+                    <span class="price">$8.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Garden Salad (serves 10)</span>
+                    <span class="dots"></span>
+                    <span class="price">$25.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Caesar Salad (serves 10)</span>
+                    <span class="dots"></span>
+                    <span class="price">$28.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Garlic Bread</span>
+                    <span class="dots"></span>
+                    <span class="price">$4.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">2L Soda</span>
+                    <span class="dots"></span>
+                    <span class="price">$3.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Dessert Pizza (Chocolate or Cinnamon)</span>
+                    <span class="dots"></span>
+                    <span class="price">$12.99</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Catering Quote Form with RegEx Validation -->
+        <section class="card cta">
+            <h3>Request a Quote</h3>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="catering-form" class="contact-form" novalidate>
+                <label for="catering-name">Name</label>
+                <input id="catering-name" type="text" placeholder="Your name" required>
+
+                <label for="catering-email">Email</label>
+                <input id="catering-email" type="email" placeholder="you@example.com" required>
+
+                <label for="catering-phone">Phone</label>
+                <input id="catering-phone" type="tel" placeholder="555-123-4567" required>
+
+                <label for="catering-guests">Estimated Guests</label>
+                <input id="catering-guests" type="number" placeholder="e.g. 25" min="1" max="999" required>
+
+                <label for="catering-date">Event Date</label>
+                <input id="catering-date" type="date" required>
+
+                <label for="catering-package">Preferred Package</label>
+                <select id="catering-package">
+                    <option>Small Gathering (10-15)</option>
+                    <option>Medium Event (20-30)</option>
+                    <option>Large Party (40+)</option>
+                    <option>Not sure yet</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pizza Plus</p>
+    </footer>
+</body>
+</html>

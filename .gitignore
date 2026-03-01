@@ -1,0 +1,9 @@
+# Development tool folders
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

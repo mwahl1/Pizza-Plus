@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Plus - Order Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/order.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pizza Plus</h1>
+        <h2>Order Your Pizza</h2>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="order.html">Order</a>
+        <a href="catering.html">Catering</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main id="order-layout">
+        <section class="card" id="quick-order">
+            <h3>Popular Pizzas</h3>
+            <p>Pick a favorite, choose a size, and add to your order.</p>
+            <div id="popular-list">
+                <div class="product-card" data-pizza="Cheese">
+                    <div class="product-header">
+                        <h4>&#129472; Cheese</h4>
+                        <span class="price-pill">from $9.99</span>
+                    </div>
+                    <label class="select-inline">
+                        Size
+                        <select class="size">
+                            <option value="Small">Small</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
+                    </label>
+                    <button class="btn btn-primary add-quick">Add Cheese</button>
+                </div>
+
+                <div class="product-card" data-pizza="Pepperoni">
+                    <div class="product-header">
+                        <h4>&#127829; Pepperoni</h4>
+                        <span class="price-pill">from $10.99</span>
+                    </div>
+                    <label class="select-inline">
+                        Size
+                        <select class="size">
+                            <option value="Small">Small</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
+                    </label>
+                    <button class="btn btn-primary add-quick">Add Pepperoni</button>
+                </div>
+
+                <div class="product-card" data-pizza="Veggie Supreme">
+                    <div class="product-header">
+                        <h4>&#129382; Veggie Supreme</h4>
+                        <span class="price-pill">from $11.99</span>
+                    </div>
+                    <label class="select-inline">
+                        Size
+                        <select class="size">
+                            <option value="Small">Small</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
+                    </label>
+                    <button class="btn btn-primary add-quick">Add Veggie Supreme</button>
+                </div>
+
+                <div class="product-card" data-pizza="Meat Lovers">
+                    <div class="product-header">
+                        <h4>&#129385; Meat Lovers</h4>
+                        <span class="price-pill">from $12.99</span>
+                    </div>
+                    <label class="select-inline">
+                        Size
+                        <select class="size">
+                            <option value="Small">Small</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
+                    </label>
+                    <button class="btn btn-primary add-quick">Add Meat Lovers</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="build-your-own">
+            <h3>Build Your Own</h3>
+            <form class="contact-form" id="custom-form" novalidate>
+                <label for="custom-size">Size</label>
+                <select id="custom-size" name="size" required>
+                    <option value="Small">Small</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+
+                <label for="custom-crust">Crust</label>
+                <select id="custom-crust" name="crust" required>
+                    <option value="Hand-Tossed">Hand-Tossed</option>
+                    <option value="Thin">Thin</option>
+                    <option value="Deep Dish">Deep Dish</option>
+                    <option value="Gluten-Free">Gluten-Free</option>
+                </select>
+
+                <label for="custom-sauce">Sauce</label>
+                <select id="custom-sauce" name="sauce" required>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Alfredo">Alfredo</option>
+                    <option value="Pesto">Pesto</option>
+                    <option value="BBQ">BBQ</option>
+                </select>
+
+                <label for="custom-cheese">Cheese</label>
+                <select id="custom-cheese" name="cheese" required>
+                    <option value="Regular">Regular</option>
+                    <option value="Extra Cheese">Extra Cheese (+$1.00)</option>
+                    <option value="Vegan">Vegan (+$1.00)</option>
+                </select>
+
+                <label>Toppings (choose any)</label>
+                <div id="toppings" class="chip-list">
+                    <label class="chip"><input type="checkbox" value="Pepperoni"><span>Pepperoni</span></label>
+                    <label class="chip"><input type="checkbox" value="Sausage"><span>Sausage</span></label>
+                    <label class="chip"><input type="checkbox" value="Bacon"><span>Bacon</span></label>
+                    <label class="chip"><input type="checkbox" value="Mushrooms"><span>Mushrooms</span></label>
+                    <label class="chip"><input type="checkbox" value="Onions"><span>Onions</span></label>
+                    <label class="chip"><input type="checkbox" value="Green Peppers"><span>Green Peppers</span></label>
+                    <label class="chip"><input type="checkbox" value="Black Olives"><span>Black Olives</span></label>
+                    <label class="chip"><input type="checkbox" value="Pineapple"><span>Pineapple</span></label>
+                    <label class="chip"><input type="checkbox" value="Jalapeños"><span>Jalapeños</span></label>
+                    <label class="chip"><input type="checkbox" value="Spinach"><span>Spinach</span></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add Custom Pizza</button>
+            </form>
+        </section>
+
+        <section class="card" id="order-summary">
+            <h3>Your Order <span id="item-count" class="item-count-badge" style="display:none">0</span></h3>
+            <ul id="order-items"></ul>
+            <div class="order-total-row">
+                <span>Total:</span>
+                <span class="order-total-price">$<span id="order-total">0.00</span></span>
+            </div>
+            <div class="order-actions">
+                <button id="clear-order" class="btn btn-secondary">Clear Order</button>
+                <button id="checkout" class="btn btn-primary">Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pizza Plus</p>
+    </footer>
+</body>
+</html>

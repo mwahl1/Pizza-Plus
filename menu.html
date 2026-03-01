@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Plus - Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pizza Plus</h1>
+        <h2>Our Menu</h2>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="order.html">Order</a>
+        <a href="catering.html">Catering</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <section class="card hero">
+            <h2>Our Menu</h2>
+            <p>Stone-baked crusts, bold flavors, and fresh ingredients. Find your favorite or build your own.</p>
+            <div class="order-actions">
+                <a class="btn btn-primary" href="order.html">Start Your Order</a>
+                <a class="btn btn-secondary" href="specials.html">View Specials</a>
+            </div>
+        </section>
+
+        <!-- Live search filter -->
+        <section class="card">
+            <label for="menu-search" class="search-label">Search the Menu</label>
+            <input type="text" id="menu-search" class="search-input" placeholder="Type to filter items...">
+        </section>
+
+        <section class="card">
+            <h3>Classic Pizzas</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span class="item-name"><strong>Cheese</strong></span>
+                    <span class="dots"></span>
+                    <span class="price">$9.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name"><strong>Pepperoni</strong></span>
+                    <span class="dots"></span>
+                    <span class="price">$10.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name"><strong>Veggie Supreme</strong></span>
+                    <span class="dots"></span>
+                    <span class="price">$11.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name"><strong>Meat Lovers</strong></span>
+                    <span class="dots"></span>
+                    <span class="price">$12.99</span>
+                </li>
+            </ul>
+            <p class="menu-note">Prices shown for medium. Sizes and options available on the <a href="order.html">Order</a> page.</p>
+        </section>
+
+        <section class="card">
+            <h3>Sides &amp; Drinks</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span class="item-name">Garlic Bread</span>
+                    <span class="dots"></span>
+                    <span class="price">$4.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Wings (8 pc)</span>
+                    <span class="dots"></span>
+                    <span class="price">$8.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Salad</span>
+                    <span class="dots"></span>
+                    <span class="price">$5.99</span>
+                </li>
+                <li class="menu-item">
+                    <span class="item-name">Soft Drinks</span>
+                    <span class="dots"></span>
+                    <span class="price">$1.99</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pizza Plus</p>
+    </footer>
+</body>
+</html>
